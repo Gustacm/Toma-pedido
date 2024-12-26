@@ -1,0 +1,28 @@
+<table>
+    <thead>
+        <tr class="table-header">
+            <th>Fecha</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio Uinitario</th>
+            <th>Precio total </th>
+        </tr>
+    </thead>
+    <tbody class="table-body">
+        <tr class="table-items">
+            <td>25/12/2024</td>
+            <td>Hamburgesa</td>
+            <td>1</td>
+            <td>{{1000 | currency:' $':'symbol' }}</td>
+            <td>{{1000 | currency:' $':'symbol' }}</td>
+            <td><button class="btn btn-danger">Eliminar</button>
+            </td>
+        </tr>
+
+    </tbody>
+    <tfoot>
+        <tr class="table-footer">
+            <td colspan="4">Total : </td>
+            <td>{{1000 | currency:' $':'symbol' }}</td>
+        </tr>
+</table>
